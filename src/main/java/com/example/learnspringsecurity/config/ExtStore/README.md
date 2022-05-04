@@ -4,3 +4,7 @@
 3а. Роли нужные SS не строкой а в виде GrantedAuthority, самое порстое возвращать new SimpleGrantedAuthority("ROLE_ТутИмяРоли");
 4. Сделать сервис с реализацией UserDetailsService который по логину будет возвращать этот самый UserDetails
 5. Заавтовайрить этот сервис в конфиг SS и указать этот сервис для AuthenticationManagerBuilder через userDetailsService(БинСервисаСюда) и после него обязательно передать энкодер для паролей.
+
+Получить текущего залогиненного пользователя:
+а) В контроллерах добавив в параметры "Authentication auth" или "@AuthenticationPrincipal UserDetails details"
+б) Хоть где через SecurityContextHolder.getContext().getAuthentication();
