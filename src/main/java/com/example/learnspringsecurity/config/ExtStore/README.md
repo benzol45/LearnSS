@@ -6,5 +6,5 @@
 5. Заавтовайрить этот сервис в конфиг SS и указать этот сервис для AuthenticationManagerBuilder через userDetailsService(БинСервисаСюда) и после него обязательно передать энкодер для паролей.
 
 Получить текущего залогиненного пользователя:
-а) В контроллерах добавив в параметры "Authentication auth" или "@AuthenticationPrincipal UserDetails details"
+а) В контроллерах добавив в параметры "@AuthenticationPrincipal UserDetails details" или "Authentication auth" (но менее наглядно что это)
 б) Хоть где через SecurityContextHolder.getContext().getAuthentication();
