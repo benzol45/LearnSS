@@ -14,3 +14,5 @@
 Получить текущего залогиненного пользователя:
 а) В контроллерах добавив в параметры "@AuthenticationPrincipal UserDetails details" или "Authentication auth" (но менее наглядно что это)
 б) Хоть где через SecurityContextHolder.getContext().getAuthentication();
+
+PS можно использовать jdbcAuthentication если имена таблиц users и authorities и тогда нужно только указать бин-datasource и все запросы/преобразования SS сделает сам. Пример в курсе у Заура, урок 93
