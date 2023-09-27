@@ -1,4 +1,4 @@
-package com.example.learnspringsecurity.config.ExtStore;
+package com.example.learnspringsecurity.config.ExtStore_oldSS;
 
 public class User {
   private String name;

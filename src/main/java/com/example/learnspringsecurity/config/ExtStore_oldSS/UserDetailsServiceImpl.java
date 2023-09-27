@@ -1,6 +1,5 @@
-package com.example.learnspringsecurity.config.ExtStore;
+package com.example.learnspringsecurity.config.ExtStore_oldSS;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +9,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-@Service
+//@Service
 public class UserDetailsServiceImpl implements UserDetailsService {
   private PasswordEncoder passwordEncoder;
   private Map<String,User> userDataBase;

@@ -1,4 +1,4 @@
-package com.example.learnspringsecurity.config.ExtStore;
+package com.example.learnspringsecurity.config.ExtStore_newSS;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
