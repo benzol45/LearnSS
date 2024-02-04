@@ -1,4 +1,4 @@
-1. Создать класс с настроками extends WebSecurityConfigurerAdapter и в нём @Bean public SecurityFilterChain filterChain(HttpSecurity http) throws Exception
+1. Создать класс с настроками @Configuration и в нём @Bean public SecurityFilterChain filterChain(HttpSecurity http) throws Exception
 2. В нём http. и настраиваем что надо, например делаем http.authorizeRequests().anyRequest().permitAll() 
 3. потом return http.build();
 4. Если надо REST то csrf().disable(), если консоль H2 .headers().frameOptions().disable()  
