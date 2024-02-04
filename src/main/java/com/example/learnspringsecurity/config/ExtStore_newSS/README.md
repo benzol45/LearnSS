@@ -1,3 +1,5 @@
+НАДО ОБНОВИТЬ - ЧАСТЬ  УЖЕ ДЕПРИКЕЙТ. Привер по проекту https://github.com/benzol45/CountryAndCityList
+
 1. Создать класс с настроками @Configuration и в нём @Bean public SecurityFilterChain filterChain(HttpSecurity http) throws Exception
 2. В нём http. и настраиваем что надо, например делаем http.authorizeRequests().anyRequest().permitAll() 
 3. потом return http.build();
